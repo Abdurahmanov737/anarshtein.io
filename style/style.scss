@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    background-color: #4C6793;
+}
+
+header {
+    width: 100%;
+    background-color: #5C2E7E;
+
+    .header-logo {
+
+        // width: 20%;
+        // border: 1px solid red;
+        img {
+            width: 250px;
+            transition: 0.3s ease-in-out;
+
+            &:hover {
+                transform: scale(1.2);
+            }
+        }
+    }
+
+    .header-nav {
+
+        // border: 1px solid red;
+        .header-menu {
+
+            display: flex;
+            list-style: none;
+            padding: 0;
+
+            .menu-li {
+
+                position: relative;
+                display: flex;
+                padding: 10px 15px;
+                margin-top: 15px;
+
+                &:hover {
+                    &::after {
+                        width: 100%;
+                    }
+
+                    a {
+                        color: #8BBCCC;
+                    }
+                }
+
+                &::after {
+                    position: absolute;
+                    content: "";
+                    width: 0%;
+                    height: 4px;
+                    border-radius: 25px;
+                    background-color: #8BBCCC;
+                    left: 0;
+                    bottom: 0;
+                    transition: 0.3s ease-in-out;
+
+                }
+
+                a {
+                    color: #fff;
+                    font-weight: 600;
+                    font-size: 17px;
+                    text-decoration: none;
+
+
+                }
+            }
+
+        }
+    }
+
+    .header-icon {
+
+        display: flex;
+
+        .socials {
+            padding: 15px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 20px;
+        }
+
+    }
+}
+
+// HEADER ENDS HERE
+
+.about-me {
+    border: 1px solid red;
+
+    padding: 150px 0;
+    .about-left{
+        border: 1px solid red;
+
+    }
+
+    .about-right{
+        border: 1px solid red;
+
+        
+    }
+
+}
+
+footer {
+    background-color: #5C2E7E;
+    width: 100%;
+    text-align: center;
+
+    span {
+        font-weight: 400;
+        color: #fff;
+    }
+
+    i {
+        font-size: 12px;
+    }
+}
