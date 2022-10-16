@@ -1,0 +1,106 @@
+header {
+    width: 100%;
+    background-color: #5C2E7E;
+
+    .header-logo {
+
+        // width: 20%;
+        // border: 1px solid red;
+        overflow: hidden;
+        img {
+            width: 250px;
+            transition: 0.3s ease-in-out;
+
+            &:hover {
+                transform: scale(1.1);
+                outline: none;
+
+            }
+        }
+    }
+
+    .header-nav {
+
+        // border: 1px solid red;
+        .header-menu {
+
+            display: flex;
+            list-style: none;
+            padding: 0;
+
+            .menu-li {
+
+                &.no-hover{
+
+                    a{
+                        color: #8BBCCC;
+                    }
+
+                    &::after{
+                        width: 100%;
+                    }
+                    
+                }
+
+                &.hover{
+                    &:hover {
+                        &::after {
+                            width: 100%;
+                        }
+    
+                        a {
+                            color: #8BBCCC;
+                        }
+                    }
+
+                }
+
+                position: relative;
+                display: flex;
+                padding: 10px 15px;
+                margin-top: 15px;
+
+               
+
+                &::after {
+                    position: absolute;
+                    content: "";
+                    width: 0%;
+                    height: 4px;
+                    border-radius: 25px;
+                    background-color: #8BBCCC;
+                    left: 0;
+                    bottom: 0;
+                    transition: 0.3s ease-in-out;
+
+                }
+
+                a {
+                    color: #fff;
+                    font-weight: 600;
+                    font-size: 17px;
+                    text-decoration: none;
+
+
+                }
+            }
+
+        }
+    }
+
+    .header-icon {
+
+        display: flex;
+
+        .socials {
+            padding: 15px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 20px;
+        }
+
+    }
+}

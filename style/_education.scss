@@ -1,0 +1,103 @@
+
+
+.jsEdu{
+    width: 100%;
+    height: 50vh   ;
+    // border: 1px solid red;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    #jsBtn{
+        // border: 1px solid red;
+        width: 40%;
+        overflow: hidden;
+        padding: 25px 10px;
+        height: 25vh;
+        position: relative;
+        #myBtnJs{
+            padding: 15px;
+            border: none;
+            background-color: rgb(57, 234, 8);
+            color: #fff;
+            font-weight: 500;
+            transition: 0.3s ease-in-out;
+
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+
+        #inputsJS{
+           position: absolute;
+            left: -450px;
+            top: 90px;
+            transition: 0.4s ease-in-out;
+            &.visibleJS{
+                left: 20px;
+            }
+        }
+        
+    }
+
+    #jsOut{
+        // border: 1px solid red;
+        width: 40%;
+        color: #fff;
+
+
+
+    }
+
+}
+
+
+.jsName{
+    width: 100%;
+    height: 50vh   ;
+    border: 1px solid red;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    #nameLeft{
+        position: relative;
+        width: 40%;
+        overflow: hidden;
+        padding: 25px 10px;
+        height: 25vh;
+        #nameBtn{
+            padding: 15px;
+            border: none;
+            background-color: rgb(196, 26, 91);
+            color: #fff;
+            font-weight: 500;
+
+            transition: 0.3s ease-in-out;
+
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+
+        #inputsName{
+            position: absolute;
+            left: -450px;
+            top: 90px;
+            transition: 0.4s ease-in-out;
+            &.visibleJS{
+                left: 20px;
+            }
+        }
+    }
+
+    #nameRight{
+        width: 40%;
+        color: #fff;
+
+    }
+
+
+}

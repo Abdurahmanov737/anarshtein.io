@@ -1,0 +1,58 @@
+.main-forms {
+
+    // background-color: red;
+    // border: 1px solid black;
+
+    padding: 50px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .main-inputs {
+        padding: 50px;
+        // border: 1px solid red;
+        background-color: #5C2E7E;
+        box-shadow: rgba(167, 163, 163, 0.30) 0px 15px 25px, rgba(221, 207, 207, 0.5) 0px 5px 10px;
+
+        label,
+        input {
+            display: block;
+        }
+
+        label {
+            padding: 5px 0;
+            color: white;
+        }
+        textarea{
+            resize: none;
+        }
+
+        // .mySubmit{
+
+        // }
+    }
+}
+
+.flexs{
+
+    display: flex;
+    // justify-content: space-between;
+
+    // flex-direction: ;
+
+    .boxes{
+        padding: 20px;
+        margin: 20px;
+        background-color: white;
+        border: 1px solid red;
+
+    }
+}
+
+
+@media (max-width: 750px) {
+    
+    .flexs{
+        flex-direction: column;
+    }
+}
