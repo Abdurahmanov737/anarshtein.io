@@ -44,8 +44,8 @@
 
                         <li class="menu-li hover">
 
-                            <a href="#">
-                                About Me
+                            <a href="projects.html">
+                                My Projects
                             </a>
                         </li>
                         <li class="menu-li hover">
@@ -78,6 +78,49 @@
                         </a>
                     </div>
                 </div>
+                <div class="mobile-header">
+                    <!-- <i class="fas fa-bars"></i> -->
+                    <img src="img/menu.png" id="header-menu" alt="">
+                    <div id="mobile-inside">
+                        <div id="mobile-close"><img src="img/close.png" alt=""></div>
+
+                        <ul class="mobile-ul">
+                            <li class="mobile-li">
+
+                                <a href="index.html">
+                                    Home
+                                </a>
+                            </li>
+
+                            <li class="mobile-li">
+
+                                <a href="education.html">
+                                    Education
+                                </a>
+                            </li>
+                            <li class="mobile-li">
+
+                                <a href="projects.html">
+                                    My Projects
+                                </a>
+                            </li>
+                            <li class="mobile-li">
+
+                                <a href="contact.html">
+                                    Contatc Me </a>
+                            </li>
+
+                            <li class="mobile-li">
+
+                                <a href="https://abdurahmanov737.github.io/assignment1/">
+                                    Github
+                                </a>
+                            </li>
+
+
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
@@ -87,32 +130,43 @@
     <!-- jsEdu starts  here-->
 
     <div class="jsEdu">
-        <div id="jsBtn">
-            <button id="myBtnJs">Click me</button>
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <div id="jsBtn">
+                        <button id="myBtnJs">Click me</button>
 
-            <br>
-            <div id="inputsJS">
-                <label for="degree">Please enter the degree: </label>
-                <input type="text" id="degree" placeholder="degree">
-                <br>
-                <label for="version">Please enter the version: </label>
-                <input type="text" id="version" placeholder="C or F">
+                        <br>
+                        <div id="inputsJS">
+                            <label for="degree">Please enter the degree: </label>
+                            <input type="text" id="degree" placeholder="degree">
+                            <br>
+                            <label for="version">Please enter the version: </label>
+                            <input type="text" id="version" placeholder="C or F">
 
-                <br>
-                <input type="submit" value="Submit" id="submitJs">
+                            <br>
+                            <input type="submit" value="Submit" id="submitJs">
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-6">
+                    <div id="jsOut">
+
+                        <h4>
+                            Output:
+                        </h4>
+                        <span id="spanJs">
+
+                        </span>
+                    </div>
+                </div>
             </div>
-
         </div>
 
-        <div id="jsOut">
 
-            <h4>
-                Output:
-            </h4>
-            <span id="spanJs">
-
-            </span>
-        </div>
 
     </div>
 
@@ -120,29 +174,41 @@
 
 
     <div class="jsName">
-
-        <div id="nameLeft">
-
-            <button id="nameBtn">Click 2</button>
+        <div class="container">
+            <div class="row">
 
 
-            <div id="inputsName">
-                <label for="name">Please enter your Name: </label>
-                <input type="text" id="name" placeholder="Name goes here: ">
-                <br>
-                <label for="grade">Please enter your Grade: </label>
-                <input type="text" id="grade" placeholder="Grade goes here: ">
+                <div class="col-6">
+                    <div id="nameLeft">
 
-                <br>
-                <input type="submit" value="Submit" id="submitName">
+                        <button id="nameBtn">Click 2</button>
+
+
+                        <div id="inputsName">
+                            <label for="name">Please enter your Name: </label>
+                            <input type="text" id="name" placeholder="Name goes here: ">
+                            <br>
+                            <label for="grade">Please enter your Grade: </label>
+                            <input type="text" id="grade" placeholder="Grade goes here: ">
+
+                            <br>
+                            <input type="submit" value="Submit" id="submitName">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div id="nameRight">
+                        <h4 id="nameGreet"></h4>
+
+                        <span id="spanName"></span>
+                    </div>
+                </div>
             </div>
         </div>
 
-        <div id="nameRight">
-            <h4 id="nameGreet"></h4>
 
-            <span id="spanName"></span>
-        </div>
+
+
     </div>
 
 
@@ -154,6 +220,7 @@
     </footer>
     <!-- Footer ends here -->
 
+    <script src="js/header.js"></script>
     <script src="js/main.js"></script>
 
 </body>

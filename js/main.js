@@ -140,3 +140,74 @@ submitName.onclick = function () {
 
 
 // let newGrade = parseInt(prompt("Please enter your grade: "))
+
+
+// function fact(n){
+//     let f=1;
+//     let i=n;
+
+//     while(i>0){
+//         f*=i
+//         i--
+//     }
+//     return f;
+// }
+
+// console.log(fact(5))
+// console.log(fibon(10))
+
+
+// function fibon(numb){
+//     let fi=[];
+//     fi[0]=0;
+//     fi[1]=1;
+//     for(let i=2;i<=(numb-2);i++){
+//         fi[i]=fi[i-1]+fi[i-2];
+//     }
+//     return fi
+// }
+
+
+
+
+
+
+
+
+
+// function nameFunc(fullName){
+
+// let fullNameParts = fullName.split(" ");
+// let newFullNameParts = [];
+
+// for(let i=0;i<fullNameParts.length;i++){
+//     let newFirstLetter = fullNameParts[i].slice(0,1).toUpperCase();
+//     let rest = fullNameParts[i].slice(1);
+//     let newWord = newFirstLetter + rest;
+
+//     newFullNameParts.push(newWord)
+// }
+// alert(newFullNameParts.join(" "))
+
+// }
+// //calling first function
+// // newName = "Nuraddin sadili"
+// nameFunc(newName)
+// splitName(newName)
+
+// function splitName(nameSplit){
+
+//     let fullNameParts = nameSplit.split(" ");
+//     let newFullNameParts = [];
+    
+//     for(let i=0;i<fullNameParts.length;i++ ){
+//         for(let j=0;i<fullNameParts[i];j++){
+//             let newUpPart = fullNameParts[j].slice(0,2)
+//             console.log(newUpPart)
+//         }
+//     }
+// }
+
+
+// //Nuraddin sadili ====> Nuraddin Sadili
+// //Nuraddin Sadili ====> NuRaDdIn SaDiLi

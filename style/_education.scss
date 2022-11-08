@@ -11,11 +11,12 @@
 
     #jsBtn{
         // border: 1px solid red;
-        width: 40%;
+        // width: 40%;
         overflow: hidden;
         padding: 25px 10px;
-        height: 25vh;
-        position: relative;
+        // height: 25vh;
+        // position: relative;
+        z-index: 5 !important;
         #myBtnJs{
             padding: 15px;
             border: none;
@@ -30,12 +31,15 @@
         }
 
         #inputsJS{
-           position: absolute;
-            left: -450px;
-            top: 90px;
+        //    position: absolute;
+        //     left: -450px;
+        //     top: 90px;
+        visibility: hidden;
+        opacity: 0;
             transition: 0.4s ease-in-out;
             &.visibleJS{
-                left: 20px;
+                visibility: visible;
+                opacity: 1;
             }
         }
         
@@ -63,11 +67,11 @@
     align-items: center;
 
     #nameLeft{
-        position: relative;
-        width: 40%;
+        // position: relative;
+        // width: 40%;
         overflow: hidden;
         padding: 25px 10px;
-        height: 25vh;
+        // height: 25vh;
         #nameBtn{
             padding: 15px;
             border: none;
@@ -83,12 +87,15 @@
         }
 
         #inputsName{
-            position: absolute;
-            left: -450px;
-            top: 90px;
+            // position: absolute;
+            // left: -450px;
+            // top: 90px;
+            visibility: hidden;
+            opacity: 0;
             transition: 0.4s ease-in-out;
             &.visibleJS{
-                left: 20px;
+                visibility: visible;
+                opacity: 1;
             }
         }
     }

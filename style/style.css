@@ -74,7 +74,66 @@ header .header-icon a {
   color: #fff;
   font-size: 20px;
 }
+header .mobile-header {
+  display: none;
+  z-index: 999 !important;
+}
+header .mobile-header #header-menu {
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+header .mobile-header #header-menu.rotated {
+  transform: rotate(90deg);
+}
+header .mobile-header #mobile-inside {
+  background-color: #5C2E7E;
+  box-shadow: rgba(197, 197, 197, 0.17) 0px -23px 25px 0px inset, rgba(197, 197, 197, 0.15) 0px -36px 30px 0px inset, rgba(197, 197, 197, 0.1) 0px -79px 40px 0px inset, rgba(197, 197, 197, 0.06) 0px 2px 1px, rgba(197, 197, 197, 0.09) 0px 4px 2px, rgba(197, 197, 197, 0.09) 0px 8px 4px, rgba(197, 197, 197, 0.09) 0px 16px 8px, rgba(197, 197, 197, 0.09) 0px 32px 16px;
+  position: absolute;
+  width: 70%;
+  height: 100vh;
+  left: -800px;
+  top: 0;
+  transition: 0.3s ease-in-out;
+}
+header .mobile-header #mobile-inside.visible {
+  left: 0;
+}
+header .mobile-header #mobile-inside #mobile-close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+}
+header .mobile-header #mobile-inside .mobile-ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 70px;
+}
+header .mobile-header #mobile-inside .mobile-ul .mobile-li {
+  margin: 10px;
+  border: 1px solid red;
+  text-align: center;
+  padding: 10px;
+}
+header .mobile-header #mobile-inside .mobile-ul .mobile-li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.1em;
+}
 
+@media (max-width: 1000px) {
+  header .container {
+    padding-right: var(--bs-gutter-x, 2rem) !important;
+    padding-left: var(--bs-gutter-x, 2rem) !important;
+  }
+  header .header-nav,
+header .header-icon {
+    display: none;
+  }
+  header .mobile-header {
+    display: block !important;
+  }
+}
 header {
   position: -webkit-sticky !important;
   position: sticky !important;
@@ -98,6 +157,9 @@ header {
 }
 .about-me .about-left tr {
   text-align: center;
+}
+.about-me .about-left th {
+  border: 1px solid green;
 }
 
 .testSticky {
@@ -167,11 +229,9 @@ footer i {
   align-items: center;
 }
 .jsEdu #jsBtn {
-  width: 40%;
   overflow: hidden;
   padding: 25px 10px;
-  height: 25vh;
-  position: relative;
+  z-index: 5 !important;
 }
 .jsEdu #jsBtn #myBtnJs {
   padding: 15px;
@@ -185,13 +245,13 @@ footer i {
   transform: scale(1.1);
 }
 .jsEdu #jsBtn #inputsJS {
-  position: absolute;
-  left: -450px;
-  top: 90px;
+  visibility: hidden;
+  opacity: 0;
   transition: 0.4s ease-in-out;
 }
 .jsEdu #jsBtn #inputsJS.visibleJS {
-  left: 20px;
+  visibility: visible;
+  opacity: 1;
 }
 .jsEdu #jsOut {
   width: 40%;
@@ -207,11 +267,8 @@ footer i {
   align-items: center;
 }
 .jsName #nameLeft {
-  position: relative;
-  width: 40%;
   overflow: hidden;
   padding: 25px 10px;
-  height: 25vh;
 }
 .jsName #nameLeft #nameBtn {
   padding: 15px;
@@ -225,15 +282,43 @@ footer i {
   transform: scale(1.1);
 }
 .jsName #nameLeft #inputsName {
-  position: absolute;
-  left: -450px;
-  top: 90px;
+  visibility: hidden;
+  opacity: 0;
   transition: 0.4s ease-in-out;
 }
 .jsName #nameLeft #inputsName.visibleJS {
-  left: 20px;
+  visibility: visible;
+  opacity: 1;
 }
 .jsName #nameRight {
   width: 40%;
   color: #fff;
+}
+
+.mainTest {
+  width: 100%;
+  height: 75vh;
+}
+
+.testings {
+  text-align: center;
+  padding-top: 70px;
+  color: white;
+}
+
+.main-projects {
+  color: white;
+  text-align: center;
+  padding-bottom: 20px;
+}
+.main-projects h4 {
+  padding: 20px 0;
+}
+.main-projects .projects {
+  padding: 30px 0;
+}
+.main-projects .projects a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5em;
 }/*# sourceMappingURL=style.css.map */
